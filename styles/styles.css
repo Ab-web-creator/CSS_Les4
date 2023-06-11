@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=El+Messiri&family=Merriweather&family=Roboto:wght@100;300;500&display=swap');
+
+/* -------------- 1. Global Styles ------------------ */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --purple: #5722CD;
+    --blue: #4845E4; 
+  }
+
+/* --------------- 2. Initial settings ------------- */
+
+body {
+    font-family: 'Merriweather', serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #0C0C0C;
+}
+
+/* --------------- 3. Nav and landing session --------------- */
+
+header {
+    min-height: 500px;
+    width: 100%;
+    background-image: linear-gradient(135deg, var(--blue) 50%, var(--purple) 100%);
+    color: white;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav {
+    background-color: darkslateblue;
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    padding: 20px 40px;
+    justify-content: flex-end;
+}
+nav ul {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    display: flex;
+    gap: 25px;
+    list-style-type: none;
+}
+nav ul li {
+    cursor: pointer;
+}
+
+
+header div {
+    margin: auto;
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+header div p {
+    color: white;
+}
+ button {
+    margin: auto;
+    font-size: 10px;
+    text-transform: uppercase;
+    min-width: 130px;
+    margin: 0 auto;
+    padding: 15px 25px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    background: #ED4385;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+header button:hover {
+    background: rgb(252, 39, 39);
+    color: white;
+}
+
+header div > * {
+    text-align: center;
+}
+header img {
+    align-self: center;
+}
+
+/* ---------- 4. Sections --------- */
+
+section {
+    padding: 70px;
+    margin: auto;
+    display: flex;
+}
+
+.section1 {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    justify-content: space-between;
+    width: 70%;
+}
+
+.section1 div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    
+}
+
+.section1 div h3 {
+    text-align: center;    
+    color: var(--purple);
+}
+
+.section1 > p {
+    text-align: center;    
+}
+.section1 > p a {
+    color: var(--purple);
+    text-decoration: none;  
+}
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    background-color: #f3f6f9;
+}
+
+.section2 .container {
+    margin: auto;
+    min-width: 90%;
+    width: 300px;
+    display: flex;
+    gap: 40px;
+}
+
+.section2 .container .script {
+    margin: auto;
+    width: 400px;
+    padding: 40px;
+}
+
+.section2 .desk_img_contaier {
+    margin: auto;
+    min-width: 320px;
+    width: 70%; 
+}
+.section2 .desk_img_contaier img {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.section2  p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+.section2 .wavy_line {
+    width: 40px;
+    margin: 20px 0;
+}
+
+.view_project {
+    margin-top: 25px;
+    text-transform: uppercase;
+    color: var(--purple);
+    font-size: 0.8rem;
+    font-weight: 500 !important;
+    letter-spacing: 1.12px;
+}
+
+.view_project_container {
+    cursor: pointer;
+    display: flex;
+    gap: 5px;
+}
+
+.view_project_container span {
+    display: inline-block;
+    width: 15px;
+    border-bottom: 2px solid var(--purple);
+    margin-bottom: -18px;
+    margin-left: 10px;
+    transition: width 0.5s ease-in-out;
+}
+.view_project_container:hover span {
+    display: inline-block;
+    width: 60px;
+}
+
+.section3 main {
+    width: 100%;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.section3 main div {
+    border: 0.5px solid var(--purple);
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.section3 main div img {
+    width: 50px;
+}
+
+.section3 h4 {
+    color: var(--purple);
+}
+
+.section3 p {
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+.section4 {
+    background-image: linear-gradient(135deg, var(--blue) 50%, var(--purple) 100%);
+    color: white;
+    padding-bottom: 15px;
+}
+
+.section4 main {
+    margin: auto;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+.section4 main h1,
+.section4 main p {
+    color: white !important;
+    text-align: center;
+}
+.section4 form {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+form label {
+    margin-bottom: 30px;
+}
+.form_input {
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 2px;
+    border: none;
+}
+
+textarea {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+form .button_container {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+form .button_container button {
+    margin-bottom: 0px;
+}
+
+
+/* --------------- 5. Footer ------------------- */
+
+footer {
+    background-color: #0C0C0C ;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    color: white !important;
+    font-size: 0.6rem;
+}
+
+/* ------------ 6. Media Queries -------------- */
+
+@media only screen and (max-width: 860px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+   
+    .section2 .desk_img_contaier {
+        margin: auto;
+        min-width: 100%;
+        width: 100%; 
+    }
+
+    .section2 .container .script {
+        margin: auto;
+        width: 100%;
+        padding: 0px;
+   
+        order: 1;
+    }
+  }
+
+  @media only screen and (max-width: 770px) {
+      section {
+        padding: 50px 20px;
+    }
+  }
+
+  @media only screen and (max-width: 670px) {
+    .section3 main div {
+        width: 250px;
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    section {
+        padding: 70px 0px;
+    }
+    .section4 {
+        padding: 70px 20px;
+    }
+
+    nav {
+        justify-content: space-evenly;
+        padding: 20px 20px;
+    }
+
+    nav ul {
+        width: 90%;
+        font-weight: 500;
+
+        justify-content: space-evenly;
+        gap: 50px;
+    }
+
+    header div {
+        width: 80%;
+        gap: 35px;
+    }
+
+    header p {
+        font-size: 1.5rem;
+    }
+
+    .section3 main div {
+        width: 80%;
+        height: 300px;
+    }
+    button {
+        font-size: 14px;
+        letter-spacing: 1.12px;
+        padding: 20px 30px;
+    }
+    .section1 p {
+        font-size: 1.1rem;
+        font-weight: 500;
+    }
+    .section2 h3 {
+        font-size: 1.7rem;
+    }
+    .section2 p {
+        font-size: 1.1rem;
+        font-weight: 300;
+    }
+    .view_project {
+        font-weight: 300;
+    }
+
+    .section3 main div {
+        height: fit-content;
+        padding: 50px;
+    }
+
+    .section3 h4 {
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+    .section3 p {
+        font-size: 1.051rem;
+        line-height: 22px;
+    }
+    .section4 main h1 {
+    font-size: 1.6rem;
+    }
+    
+    .section4 main p {
+    font-size: 1.2rem;
+    }
+
+    form button {
+        width: 170px;
+        margin-top: 10px;
+    }
+    .section4 {
+        padding-bottom: 20px;
+    }
+    footer p {
+        font-size: 14px;
+    }
+}
+
+
+@media only screen and (max-width: 410px) {
+    nav {
+        padding: 20px 10px;
+    }
+    nav ul {
+        gap: 18px;
+    }
+    nav ul li {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+- [ ] The fonts used in the designs are `Merriweather` for the headings and `Roboto` for normal text. These fonts can
+  can be found for free on Google Fonts, just make sure to import it into your CSS file and set it up
+as `font-family`.
+
+- [ ] The designer has the used colors for us
+  supplied: [view the color palette here](https://coolors.co/5722cd-4b49e8-f2f0ff-ed4385-0c0c0c). It's useful to
+pasting these colors at the top of your CSS file so you can easily copy them when you need them
+have. *Tip*: You can also use
+CSS variables ([EdHub Chap. 9.3](https://edhub.novi.nl/study/courses/514/content/12701)). Its about the following
+                                                                                        HEX codes:
+- purple `#5722CD`;
+- Blue `#4845E4`;
+- Pink `#ED4385`;
+- Black `#0C0C0C` (for standard text);
+- Light purple `#F2F0FF` (for big floating words, like "hello" and "services")
+*Exceptions:*
+- Light gray `#F3F6F9` (for the background of the projects)
+- Gray `#7A7A7A` (for the service tile text); */
